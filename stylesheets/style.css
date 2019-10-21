@@ -1,0 +1,104 @@
+html, *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image:url(../img/Snow.jpg);
+    background-repeat: no-repeat;
+    background-size: 1560px 860px;
+}
+
+form{
+	width:100%;
+    margin:auto;
+    border-radius:5px;
+    background:white;
+}
+
+.object{
+    margin:auto;
+    padding-top:3px;
+    padding-right:100px;
+    padding-bottom:550px;
+    padding-left:100px;
+    border-radius:5px;
+
+}
+
+.form{
+    border-radius:5px;
+    border-color:white;
+    background-color:rgba(0,0,0, 0.5);
+    padding:12px;
+    animation: One .9s;
+
+}
+
+.alert-light{
+    color:red;
+    border:1px;
+    transition: 200ms all ease;
+}
+
+.form-control{
+   border-radius:0px;
+}
+
+label{
+    font-family: sans-serif;
+}
+
+input[type="text"]{
+    border-bottom:3px solid #00DEFF; 
+    background-color:#EAEAEA;
+}
+
+input[type="text"]:focus{
+    border-bottom:3px solid lime;
+    -webkit-webkit transition: border-bottom .9s;
+    -moz-webkit transition: border-bottom .9s;
+    -ms-webkit transition: border-bottom .9s;
+    -o-webkit transition: border-bottom .9s;
+    webkit transition:  border-bottom  .9s;
+}
+
+
+
+input[type="submit"]{
+    animation: Two .9s;
+}
+
+
+/* Animation with KeyFrames CSS3 */
+
+@keyframes One {
+    0% {
+        transition: .0s;
+        padding:0; 
+        opacity: 0.1;
+
+    }100% {
+
+        transition: .9s;
+        opacity: 0.9;
+        padding:12px;
+    }
+}
+
+@keyframes Two {
+    0% {
+        transition: .0s;
+        opacity: 0.1;
+        transition background-color: .9s;
+        background-color: black;
+    } 100% {
+
+        transition: .9s;
+        opacity: 0.9;
+        transition background-color: .9s;   
+        background-color: white;
+        
+    }
+}
